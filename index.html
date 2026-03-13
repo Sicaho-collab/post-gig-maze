@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post a Gig — Alumable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <script>
+    (function (m, a, z, e) {
+      var s, t, u, v;
+      try {
+        t = m.sessionStorage.getItem('maze-us');
+      } catch (err) {}
+
+      if (!t) {
+        t = new Date().getTime();
+        try {
+          m.sessionStorage.setItem('maze-us', t);
+        } catch (err) {}
+      }
+
+      u = document.currentScript || (function () {
+        var w = document.getElementsByTagName('script');
+        return w[w.length - 1];
+      })();
+      v = u && u.nonce;
+
+      s = a.createElement('script');
+      s.src = z + '?apiKey=' + e;
+      s.async = true;
+      if (v) s.setAttribute('nonce', v);
+      a.getElementsByTagName('head')[0].appendChild(s);
+      m.mazeUniversalSnippetApiKey = e;
+    })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'c8b12346-676f-45fe-b5db-982f0f7faa83');
+    </script>
+    <script type="module" crossorigin src="/post-gig-maze/assets/index-DkbOPK4F.js"></script>
+    <link rel="stylesheet" crossorigin href="/post-gig-maze/assets/index-C_eVG8I4.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
